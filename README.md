@@ -9,7 +9,7 @@ docker exec -it bitnami-1_solr_1 bash
 docker exec -it bitnami-1_solr_1 ./opt/bitnami/solr/bin/post -c mycore ./opt/solr/server/solr/mycore/example/exampledocs/
 ```
 
-##### installtion video
+##### installation video
 https://youtu.be/2-VwlzpX0qY
 
 ##### installation manual
@@ -19,7 +19,10 @@ https://computingforgeeks.com/install-latest-apache-solr-on-ubuntu-debian
 ##### how to download
 wget https://downloads.apache.org/lucene/solr/8.7.0/solr-8.7.0-src.tgz
 
-
+```bash
 docker ps
+```
+```bash
 CONTAINER ID        IMAGE                      COMMAND                  CREATED             STATUS              PORTS                    NAMES
 0feb77f8dedd        bitnami/solr:8-debian-10   "/app-entrypoint.sh …"   About an hour ago   Up About an hour    0.0.0.0:8983->8983/tcp   bitnami-1_solr_1 <---
+```

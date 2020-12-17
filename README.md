@@ -2,10 +2,12 @@ To run solr console command inside docker:
 ```bash
 docker exec -it bitnami-1_solr_1 ./opt/bitnami/solr/bin/solr status
 docker exec -it bitnami-1_solr_1 bash
+```
 
 ##### to post data folder to core run
 ```bash
 docker exec -it bitnami-1_solr_1 ./opt/bitnami/solr/bin/post -c mycore ./opt/solr/server/solr/mycore/example/exampledocs/
+```
 
 ##### installtion video
 https://youtu.be/2-VwlzpX0qY

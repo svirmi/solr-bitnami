@@ -1,0 +1,15 @@
+version: '2'
+services:
+  solr:
+    image: 'docker.io/bitnami/solr:8-debian-10'
+    mem_limit: 1g
+    ports:
+      - '8983:8983'
+    volumes:
+      - ./solr/mycore:/opt/solr/server/solr/mycore #https://github.com/bitnami/bitnami-docker-solr/issues/17
+    environment:
+    - SOLR_CORE=mycore
+    - "SOLR_JAVA_MEM=-Xms512m -Xmx512m"
+volumes:
+  solr_data:
+    driver: local
